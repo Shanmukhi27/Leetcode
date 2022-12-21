@@ -1,0 +1,21 @@
+int missingNumber(int* nums, int numsSize){
+     int n=numsSize;
+      int arr[n+1];
+      for(int i=0;i<=n;i++)
+           arr[i]=0;
+      for(int i=0;i<n;i++)
+      {
+          arr[nums[i]]=1;
+      }
+      for(int i=0;i<=n;i++)
+      {
+          if(arr[i]==0)
+            {
+                printf("%d",i);
+                int k=i;
+                return k;
+            }
+      }
+      return 0;
+
+}
